@@ -1,17 +1,10 @@
 /* Fullers Automotive - CSS Styling */
 
-.logo {
-    max-width: 350px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #222, #444, #f4f4f4);
     color: #333;
 }
 
@@ -20,6 +13,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid #ff1493; /* Pink Outline */
 }
 
 nav ul {
@@ -29,6 +23,7 @@ nav ul {
     justify-content: center;
     background: #444;
     margin: 0;
+    border-bottom: 3px solid #00c3ff; /* Blue Outline */
 }
 
 nav ul li {
@@ -44,20 +39,24 @@ nav ul li a {
 section {
     padding: 40px;
     text-align: center;
+    background: #f4f4f4;
+    border-bottom: 5px solid #222;
 }
 
 .cta-button {
     display: inline-block;
     padding: 15px 25px;
-    background: #007bff;
+    background: linear-gradient(to right, #ff1493, #00c3ff);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    font-weight: bold;
+    border: 2px solid #222;
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    background: linear-gradient(to right, #00c3ff, #ff1493);
 }
 
 form {
@@ -70,29 +69,31 @@ form {
 input, textarea {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 2px solid #ff1493;
     border-radius: 5px;
 }
 
 button {
     padding: 10px;
-    background: #007bff;
+    background: linear-gradient(to right, #ff1493, #00c3ff);
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 button:hover {
-    background: #0056b3;
+    background: linear-gradient(to right, #00c3ff, #ff1493);
 }
 
 footer {
     background: #222;
-    color: white;
+    color: #222;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    border-top: 5px solid #ff1493;
 }
 
 /* Social Media Links */
@@ -107,9 +108,11 @@ footer {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 5px;
 }
 
 .footer-social a:hover {
-    color: #007bff;
-}
+    color: #ff1493;
+    border-bottom: 2px solid #ff1493;
 
