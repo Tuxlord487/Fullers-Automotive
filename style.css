@@ -1,11 +1,12 @@
-/* Fullers Automotive - CSS Styling */
+/* Fullers Automotive - Professional CSS Styling */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #222, #444, #f4f4f4);
     color: #333;
+    text-align: center;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #ff1493; /* Pink Outline */
+    border-bottom: 5px solid #ff1493;
 }
 
 nav ul {
@@ -23,7 +24,7 @@ nav ul {
     justify-content: center;
     background: #444;
     margin: 0;
-    border-bottom: 3px solid #00c3ff; /* Blue Outline */
+    border-bottom: 3px solid #00c3ff;
 }
 
 nav ul li {
@@ -34,13 +35,43 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff1493;
 }
 
 section {
     padding: 40px;
+    border-bottom: 0px solid #222;
     text-align: center;
-    background: #f4f4f4;
-    border-bottom: 5px solid #222;
+}
+
+section:nth-child(even) {
+    background: #fff;
+  
+}
+
+section:nth-child(odd) {
+    background: #222;
+    color: white;
+}
+
+.section-content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-image {
+    width: 100%;
+    text-align: center;
+}
+
+.section-image img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .cta-button {
@@ -53,10 +84,12 @@ section {
     margin-top: 20px;
     font-weight: bold;
     border: 2px solid #222;
+    transition: 0.3s;
 }
 
 .cta-button:hover {
     background: linear-gradient(to right, #00c3ff, #ff1493);
+    transform: scale(1.05);
 }
 
 form {
@@ -64,6 +97,7 @@ form {
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
+    text-align: center;
 }
 
 input, textarea {
@@ -71,6 +105,7 @@ input, textarea {
     margin: 10px 0;
     border: 2px solid #ff1493;
     border-radius: 5px;
+    text-align: center;
 }
 
 button {
@@ -81,15 +116,17 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 button:hover {
     background: linear-gradient(to right, #00c3ff, #ff1493);
+    transform: scale(1.05);
 }
 
 footer {
     background: #222;
-    color: #222;
+    color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -110,9 +147,33 @@ footer {
     font-size: 20px;
     border-bottom: 2px solid #00c3ff;
     padding-bottom: 5px;
+    transition: 0.3s;
 }
 
 .footer-social a:hover {
     color: #ff1493;
     border-bottom: 2px solid #ff1493;
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #444;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
 
